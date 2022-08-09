@@ -6,39 +6,35 @@ const sr = ScrollReveal({
 /*welcome*/
 
 
-sr.reveal('.title-welcome h1, .title-welcome h3', {
+sr.reveal('.title-welcome span', {
     duration: 1500, 
     origin: 'left'
 })
-
+sr.reveal('.btnWelcome', {
+    duration: 3200, 
+    origin: 'bottom'
+})
 
 sr.reveal('.list-icon-nwtwork', {
     duration: 1500, 
     origin: 'bottom'
 })
 
-
-// Languages
-
-sr.reveal('.list-languages-skills li', {
-    duration: 1500, 
-    einterval: 600 
-})
-
 // cards web-site
 
-sr.reveal('.box-card-project', {
-    duration: 1000, 
+sr.reveal('.box-cards2', {
+    duration: 1000,
+    origin: 'right' 
     
 })
 
-sr.reveal('#form-contacto-personal', {
+sr.reveal('#form-contato', {
     duration: 1000, 
     origin: 'bottom'
 })
 
 
-sr.reveal('.card-skills', {
+sr.reveal('.cards1', {
     duration: 1000, 
     origin: 'left'
 })

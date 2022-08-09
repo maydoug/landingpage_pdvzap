@@ -41,6 +41,8 @@ header img {
 }
 
 /* alterar depois... */
+
+/* 
 .logo {
     color: #1c5894;
     font-size: 25px;
@@ -50,11 +52,11 @@ header img {
     transition: all .6s;
 }
 
-/* .logo:hover {
+.logo:hover {
     background-color:var(--color-first);
     color: var(--color-white);
-} */
-
+} 
+*/
 
 /* ------itens of menu nav-bar-----*/
 .nav-bar {
@@ -94,19 +96,12 @@ header img {
     background: none;
     color:  var(--color-first);
     display: block;
-}
-
-.btn-contacto a {
-    display: block;
-    color: var(--color-first);
-    border-radius: 25px;
-    padding: 7px 10px;
     transition: .6s ;
+    padding: 7px 10px;
 }
 
-.btn-contacto a:hover {
+.btn-contacto:hover {
     border: 2px solid var(--color-first);
-    border-radius: 25px;
     background-color: var(--color-first);
     color: var(--color-white);
 }
@@ -134,45 +129,64 @@ header img {
 
 /* -------------- welcome portfolio --------------*/
 
-.welcome-portfolio {
-    background-color: #ffffff;
+.welcome-home {
+    background-color: var(--color-white);
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 9% 0 12% 0;
+    padding: 6% 0 12% 0;
 }
-.welcome-portfolio img{
+.welcome-home img{
     height: 500px;
 }
-.welcome-portfolio iframe{
+.welcome-home iframe{
     border-radius: 15px;
 }
 
 .intro{
     text-align: center;
+    margin-left: 60px;
 }
 
-.apresents {
+.apresentacao {
     font-style: italic;
     font-size: 20px;
     display: block;
     margin-bottom: -10px;
 }
 
-.welcome-portfolio h1 {
+.welcome-home h1 {
     font-size: 4em;
     font-weight: bold;
 }
 
-.welcome-portfolio article {
+.welcome-home article {
     padding: 10px;
 }
 
-.welcome-portfolio h3 {
+.welcome-home h3 {
     margin-top: 20px;
 }
 
+.btnWelcome {
+    text-align: center;
+    margin-left: 60px;
+}
+.btnWelcome button{
+    padding: 1px 50px;
+    border-radius: 30px;
+    background-color: var(--color-first);
+    color: var(--color-white);
+    font-size: 25px;
+    border: 1px solid var(--color-first);
+    transition: .6s ;
+}
+.btnWelcome button:hover{
+    font-size: 28px;
+    background-color: var(--color-white);
+    color: var(--color-first);
+}
 
 .title-welcome {
     max-width: 500px;
@@ -196,7 +210,7 @@ header img {
 }
 
 .list-icon-nwtwork a:hover {
-    color: white;
+    color: var(--color-white);
     background-color: var(--color-first);
 }
 .list-icon-nwtwork li:hover {
@@ -261,40 +275,16 @@ header img {
     background-color: #0000001d;
 }
 
+/* ------------------------- Container Cards2-------------------*/
 
-.download-curriculo {
-    text-decoration: none; 
-    background-color: #0000001c;
-    padding: 10px;
-    display: block;
-    width: 200px;
-    cursor: pointer;
-    border-radius: 6px;
-    margin: 20px 0;
-}
-
-/* ------------------ topic - estuddos ----------- */
-
-.topic-estude {
-    display: block;
-}
-
-[next-element] {
-    display: none;
-}
-
-
-
-/* -------------------------container-skills-------------------*/
-
-.container-skills {
+.container-cards1 {
     background-color: var(--color-first);
     color: var(--color-white);
     display: block;
     padding: 5% 10px;
 }
 
-.container-skills article {
+.container-cards1 article {
     text-align: center;
     max-width: 800px;
     margin: auto;
@@ -308,7 +298,7 @@ header img {
     padding: 10px ;
 }
 
-.card-skills {
+.cards1 {
     background-color: var(--color-white);
     color: var(--color-black);
     width: 300px;
@@ -318,7 +308,7 @@ header img {
     margin: 10px;
 }
 
-.icon-area-ti {
+.icons {
     background-color: var(--color-first);
     color: #fff;
     font-size: 40px;
@@ -333,33 +323,30 @@ header img {
     margin: 0 auto;
 }
 
-.card-skills h4 {
+.cards1 h4 {
     text-align: center;
     margin-top: 50px;
 }
-
-.container-skills a {
-    text-decoration: none;
-    color: #4028db;
-}
-
-.container-skills a:hover {text-decoration: underline;}
 /*listcard */
 
-.card-skills ul {list-style-type: none; padding: 0;}
-.card-skills li {padding: 10px;}
-.card-skills li::before {
+.cards1 ul {list-style-type: none; padding: 0;}
+.cards1 li {padding: 10px;}
+.cards1 li::before {
     content: ''; 
     font-size: 20px;
     margin-right: 5px;
 }
-/* ---------------------- project container --------------------------- */
-.my-projects-container {
+/* ---------------------- Container cards 2 --------------------------- */
+.container-cards2 {
     background-color: #F4F4F5;
     padding: 40px 10px;
 }
+.container-cards2 h2 {
+    text-align: center;
+    margin: 20px 0 40px;
+}
 
-.container-projects {
+.container-interno-cards2 {
     display: grid;
     grid-template-columns: auto auto ;
     justify-content: start;
@@ -368,12 +355,7 @@ header img {
     margin: auto;
 }
 
-.my-projects-container h2 {
-    text-align: center;
-    margin: 20px 0 40px;
-}
-
-.box-card-project {
+.box-cards2 {
     background-color: #fcfcfc;
     color: rgb(0, 0, 0);
     max-width: 500px;
@@ -387,23 +369,22 @@ header img {
     margin: 15px;
 }
 
-.box-card-project:hover {
+.box-cards2:hover {
     transform: translateY(-0.7em);
-    
     box-shadow: 0 0 10px #00000017;
     z-index: 10;
 }
 
-.box-card-project article {
+.box-cards2 article {
     margin: 10px;
 }
 
-.box-card-project img {
+.box-cards2 img {
     max-width: 100%;
     margin-bottom: 15px;
 }
 
-.box-card-project a {
+.box-cards2 a {
     background-color: var(--color-first);
     border: none;
     text-align: center;
@@ -435,23 +416,23 @@ header img {
     font-size: 14px;
 }
 
-.box-card-project a:hover {
+.box-cards2 a:hover {
     background-color: var(--color-white);
     color: var(--color-first);
     border: 1px solid var(--color-first);
 }
 
-.box-card-project h3 {
+.box-cards2 h3 {
     font-size: 23px;
 }
 
-.box-card-project img {
+.box-cards2 img {
     height: 300px;
 }
 
 
 
-/* Área contacto form */
+/* Contato */
 
 .form-contact-dev {
     position: relative;
@@ -483,44 +464,44 @@ header img {
     margin: 20px 0 ;
 }
 
-/* form */
+/* formulario */
 
-#form-contacto-personal label {
+#form-contato label {
     font-size: 20px;
     margin: 10px 0 ;
 }
 
-#form-contacto-personal input {
+#form-contato input {
     padding: 5px;
     border: 1px solid #454545;
     outline: none;
-    background-color: white;
+    background-color: var(--color-white);
     color: #000;
     box-shadow: 0px 0px 10px #2828280e;
     border-radius: 4px;
 }
 
-#form-contacto-personal button{
+#form-contato button{
     background-color: var(--color-first); 
-    color: #ffffff;
+    color: var(--color-white);
     padding: 10px;
     border-radius: 6px;
     border: none;
     display: block;
     width: 90%;
-    box-shadow: 0 0 5px #473d8bc1;
     transition: all .3s;
     margin: 20px auto;
 }
 
-#form-contacto-personal button:hover{
+#form-contato button:hover{
     box-shadow: 0 0 0px;
-    background-color: #4e439a;
+    background-color: var(--color-white);
+    color: var(--color-first);
+    border: 1px solid var(--color-first);
 }
 .box-message {
-    background-color: #1c88a6;
-    border-left: 2px solid black;
-    color: #fff;
+    background-color: var(--color-first);
+    color: var(--color-white);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -529,13 +510,11 @@ header img {
     display: none;
     border-radius: 7px;
     padding: 20px;
-}
-.box-message a {
-    color: #25c7a4;
+    opacity: 85%;
 }
 .box-message button {
-    background-color: white;
-    color: black;
+    background-color: var(--color-white);
+    color: var(--color-black);
     font-size: 20px;
     border: none;
     border-radius: 50%;
@@ -563,16 +542,17 @@ header img {
     }
 
     .nav-bar {
-        background-color: #e0e0e0;
+        background-color: var(--color-white);
         display: block;
         position: absolute;
         transform: translateX(-100%);
         top: 8vh;
-        width: 100%;
+        width: 50%;
         height: 92vh;
         left: 0;
         z-index: 20;
         transition: .4s;
+        opacity: 95%;
     }
 
     .active-menu-mobile {
@@ -585,8 +565,8 @@ header img {
     }
 
     .nav-bar a {
-        font-size: 30px;
-        padding: 20px 10px;
+        font-size: 20px;
+        padding: 10px 8px;
     }
 }
 
@@ -594,10 +574,14 @@ header img {
 
 
 @media screen and (max-width: 800px) {
-    .welcome-portfolio {
+    .welcome-home iframe{
+        height: 220px;
+        width: 300px;
+    }    
+    .welcome-home {
         display: block;
     }
-    .welcome-portfolio img {
+    .welcome-home img {
         display: block;
         width: 80%;
         margin: auto;
@@ -623,6 +607,12 @@ header img {
     .list-languages-skills li {
         font-size: 60px;
     }
+    .btnWelcome{
+        margin-left: 5px;
+    }
+    .btnWelcome button{
+        padding: 1px 20px;
+    }
 
     /* ---- about - me respnse ----- */
 
@@ -635,12 +625,12 @@ header img {
         margin: auto;
     }
 
-    .container-projects {
+    .container-interno-cards2 {
         grid-template-columns: auto;
         padding: 20px 4px;
     }
 
-    .box-card-project {
+    .box-cards2 {
         max-width: 100%;
     }
 }
@@ -673,7 +663,7 @@ header img {
 }
 
 @media screen and (max-width: 962px) {
-    .container-skills p {
+    .container-cards1 p {
         text-align: left;
         margin: 20px 0 ;
     }
@@ -681,13 +671,13 @@ header img {
         grid-template-columns: 1fr;
     }
 
-    .card-skills {
+    .cards1 {
         width: 98%;
         padding: 10px;
         margin: 10px 0;
     }
 
-    .icon-area-ti {
+    .icons {
         font-size: 25px;
         width: 50px;
         position: static;
@@ -698,7 +688,7 @@ header img {
 
 @media screen and (max-width: 270px) { /* braek form */
     
-    .welcome-portfolio h1 {
+    .welcome-home h1 {
         font-size: 2em;
     }
 }
