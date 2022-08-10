@@ -684,6 +684,9 @@ header img {
     .btnFooter button{
         font-size: 14px;
     }
+    .btnFooter button:hover{
+        font-size: 14px;
+    }
 
     /* ---- about - me respnse ----- */
 
@@ -771,6 +774,9 @@ header img {
         flex-direction: flex;
     }
     .btnFooter button{
+        font-size: 8px;
+    }
+    .btnFooter button:hover{
         font-size: 8px;
     }
 }
