@@ -1,10 +1,12 @@
 @charset "UTF-8"; 
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 /* definitions */
 * {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -42,7 +44,7 @@ header img {
 
 /* alterar depois... */
 
-/* 
+
 .logo {
     color: #1c5894;
     font-size: 25px;
@@ -52,11 +54,10 @@ header img {
     transition: all .6s;
 }
 
-.logo:hover {
+/* .logo:hover {
     background-color:var(--color-first);
     color: var(--color-white);
-} 
-*/
+}  */
 
 /* ------itens of menu nav-bar-----*/
 .nav-bar {
@@ -113,8 +114,8 @@ header img {
     width: 40px;
     background: none;
     border: none;
-    color: var(--color-white);
-    background-color: #00000030;
+    color: var(--color-black);
+    background-color: var(--color-white);
     padding: 5px 10px;
     border-radius: 50%;
     cursor: pointer;
@@ -123,7 +124,7 @@ header img {
 }
 
 .btn-menu-nav-bar:hover {
-    background-color: #00000088;
+    background-color: var(--color-white);
 }
 
 
@@ -229,6 +230,49 @@ header img {
     filter: drop-shadow(0 10px 0.3em #29292932);
 }
 
+/* -------------------->>  FOOTER FIXED  <<-----------------------  */
+.footer {
+    height: 10vh;
+    width: 100%;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    position: fixed;
+    z-index: 20;
+    bottom: 0 ;
+    left: 0 ;
+}
+.grid-footer {
+    display: grid;
+    padding-top: 10px;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    background-color: var(--color-white);
+}
+#cardFooter-flex{
+    display: flex ;
+    flex-direction: row;
+}
+.btnFooter {
+    margin-left: 5px;
+}
+.btnFooter button{
+    padding: 1px 50px;
+    border-radius: 30px;
+    background-color: var(--color-first);
+    color: var(--color-white);
+    font-size: 25px;
+    border: 1px solid var(--color-first);
+    transition: .6s ;
+}
+.btnFooter button:hover{
+    font-size: 25px;
+    background-color: var(--color-white);
+    color: var(--color-first);
+}
+.card-footer {
+}
+.card-footer h3 {
+}
 
 /* --------------- about - me -----------------*/
 .about-me {
@@ -521,9 +565,20 @@ header img {
     padding: 3px 10px;
 }
 
+.topic-estude {
+    display: block;
+}
+
+[next-element] {
+    display: none;
+}
+
+
 #design {
     height: 200px;
 }
+
+
 
 /* ---------------- >> Responsive page << -------------------- */
 
@@ -547,7 +602,7 @@ header img {
         position: absolute;
         transform: translateX(-100%);
         top: 8vh;
-        width: 50%;
+        width: 60%;
         height: 92vh;
         left: 0;
         z-index: 20;
@@ -566,7 +621,7 @@ header img {
 
     .nav-bar a {
         font-size: 20px;
-        padding: 10px 8px;
+        padding: 8px 10px;
     }
 }
 
@@ -612,6 +667,14 @@ header img {
     }
     .btnWelcome button{
         padding: 1px 20px;
+    }
+    .grid-footer {
+        padding-top: 2px;
+        grid-template-columns: auto;
+        text-align: center;
+    }
+    .btnFooter button{
+        font-size: 16px;
     }
 
     /* ---- about - me respnse ----- */

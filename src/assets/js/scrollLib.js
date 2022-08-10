@@ -23,8 +23,7 @@ sr.reveal('.list-icon-nwtwork', {
 // cards web-site
 
 sr.reveal('.box-cards2', {
-    duration: 1000,
-    origin: 'right' 
+    duration: 1000, 
     
 })
 
@@ -38,7 +37,5 @@ sr.reveal('.cards1', {
     duration: 1000, 
     origin: 'left'
 })
-
-
 
 /*  */
